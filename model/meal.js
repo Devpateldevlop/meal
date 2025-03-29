@@ -11,7 +11,9 @@ const TiffinSchema = new mongoose.Schema({
     Kaushik_Bhargav: { type: String},
     Theme: { type: String},
     Sound: { type: Boolean, default: false },
-    Vibrate: { type: Boolean, default: false }
+    Vibrate: { type: Boolean, default: false },
+    AxayMealPrice: { type: Number, default: 0 },
+    Kaushik_Bhargav_meal_Price  : { type: Number, default: 0 },
   });
 
 const meal = mongoose.model('meal', TiffinSchema,'meal');
