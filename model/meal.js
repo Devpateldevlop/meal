@@ -5,7 +5,7 @@ mongoose.connect("mongodb+srv://pdev5771:rxHFzG2xPEkkocvM@cluster0.bso1d.mongodb
 .catch((err) => console.log('MongoDB connection error: ' + err));
 
 const TiffinSchema = new mongoose.Schema({
-  Date: { type: Date, required: true },
+  Date: { type: String, required: true },
   NumberofTiffinAxay: { type: Number, required: true },
   NumberofTiffin_Kaushik_Bhargav: { type: Number, required: true },
   Theme: { type: String, default: "sap_horizon" },
